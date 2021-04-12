@@ -2,19 +2,16 @@
     margin: 0;
     padding: 0;
 }
-.nav-list{
-    display: flex;
-   /* background-color: darkcyan; */
-}
+
 .text{
   /*  background-color: darkgoldenrod; */
     width:55%;
     padding-left:35px;
-}
-.text h1{
     color: rgb(74, 181, 231);
     font-weight: bold;
+    font-size: 45px;
 }
+
 .TTLogo{
     width: 45%;
     padding-right: 200px;
@@ -24,47 +21,74 @@
    width: 30%;
    float: right;
 }
-.Social-contact{
-  /*  background-color: chartreuse; */
+.flex-container{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+   
 }
 .logo{
-    width: 70%;
- 
-    padding: 80px;
-    padding-right: 0px;
+    width: 1000px;
+    padding-top: 80px;
 }
-.logo-inside{
-    padding: 30px;
-    margin: 10px;
+.address {
+    width: 40%;
 }
-.logo-inside a{
-   padding-left: 80px;
-   font-size: 35px;
-   color: darkslategray;
+.logo a{
+    font-size: 25px;
+    color: black;
+    margin: 20px;
+    font-weight: 900;
 }
-.logo-inside a img{
-    height: 100px;
+.logo a img{
     width: 100px;
-
+    height: 100px;
+    border-radius: 20px;
 }
+.container{
+    width: 400px;
+}
+
 .vl {
     border-left: 6px solid green;
     height: 700px;
-    
-    background-color: aqua;
+
+  }
+  hr{
+      display: none;
   }
   .address{
       margin: 80px;
-      margin-top: 100px;
   }
   .address h2{
       font-weight: bolder;
-      font-size: 30px;
+      font-size: 35px;
       color: darkblue;
   }
   .address p{
-      font-size: 20px;
+      font-size: 25px;
      padding: 15px;
   }
 
+  @media (max-width:1945px)
+  {
+      .vl{
+          display: none;
+      }
+      hr{
+          display: block;
+          width: 100%;
+          border: 8px solid green;
+          color: green;
+      }
+  }
+@media (max-width:1200px) {
+    .TTLogo img{
+        width:200px;   
+     }
+     .nav-list{
+         display: block;
+         justify-content: center;
+         align-items: center;
+     }
+}

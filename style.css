@@ -2,93 +2,96 @@
     margin: 0;
     padding: 0;
 }
-
+.navbar{
+    margin: auto;
+}
+.nav-list{
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    list-style: none;
+}
 .text{
   /*  background-color: darkgoldenrod; */
-    width:55%;
-    padding-left:35px;
+    width:50%;
     color: rgb(74, 181, 231);
     font-weight: bold;
-    font-size: 45px;
+    font-size: 30px;
+    text-align: center;
 }
-
 .TTLogo{
-    width: 45%;
-    padding-right: 200px;
-    padding-top: 20px;
+    width: 50%;
+    margin: auto;
 }
 .TTLogo img{
-   width: 30%;
-   float: right;
+   width: 150px;
+ 
 }
 .flex-container{
     display: flex;
     flex-wrap: wrap;
+}
+.Social-contact{
+  
+    align-items: center;
     justify-content: center;
-   
+    padding-top: 80px;
+    text-align: center;
 }
 .logo{
-    width: 1000px;
-    padding-top: 80px;
+    width: 800px;
 }
-.address {
-    width: 40%;
-}
+
 .logo a{
-    font-size: 25px;
+    font-size: 20px;
     color: black;
-    margin: 20px;
-    font-weight: 900;
+    margin: auto;
+    font-weight: 500;
+    
 }
 .logo a img{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
     border-radius: 20px;
+    padding: 10px;
 }
 .container{
     width: 400px;
+   /* background-color: chartreuse; */
 }
-
-.vl {
-    border-left: 6px solid green;
-    height: 700px;
-
-  }
-  hr{
-      display: none;
-  }
+ 
   .address{
-      margin: 80px;
+    
+      border-left: 6px solid green;
+      height: 300px;
+      text-align: center;
+      padding: 20px;
   }
   .address h2{
       font-weight: bolder;
-      font-size: 35px;
+      font-size: 25px;
       color: darkblue;
   }
   .address p{
-      font-size: 25px;
-     padding: 15px;
+      font-size: 18px;
   }
-
-  @media (max-width:1945px)
-  {
-      .vl{
-          display: none;
-      }
-      hr{
-          display: block;
-          width: 100%;
-          border: 8px solid green;
-          color: green;
-      }
-  }
-@media (max-width:1200px) {
-    .TTLogo img{
-        width:200px;   
-     }
-     .nav-list{
-         display: block;
-         justify-content: center;
-         align-items: center;
-     }
+@media (max-width:1085px)
+{
+    
+    .address{
+        text-align: center;
+        border: hidden;
+        
+        margin: auto;
+    }
+    .logo{
+        margin: auto;
+    }
+    .hl{
+        color: green;
+        border-top: 5px solid green;
+        width: 100%;
+    }
 }
+  
